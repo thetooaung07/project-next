@@ -8,12 +8,16 @@
 
 .effect2 {
   display: flex;
-  justify-content: center;
   align-items: center;
   z-index: 2;
   border-radius: 32px;
   position: relative;
   box-shadow: 0 3px 40px rgba(17, 17, 17, 0.788);
+  backdrop-filter: blur(14.5px);
+  max-width: 80%;
+  width: 950px;
+  height: 550px;
+  margin-bottom: 20px;
 }
 .effect2:before,
 .effect2:after {
@@ -44,3 +48,57 @@
   -o-transform: rotate(3deg);
   -ms-transform: rotate(3deg); */
 }
+
+.container {
+  padding: 5.5%;
+  
+}
+
+.cardOverlay {
+  width: 50%;
+  align-self: flex-start;
+  z-index: 40;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+}
+
+
+
+.listElements {
+  width: 75%;
+  margin-top: 20px;
+ 
+}
+
+.listElements ul {
+  font-size: 13px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+.middle p {
+  font-size: 13px;
+  padding-left: 7px;
+  opacity: 0.9;
+  
+}
+
+.middle div {
+  font-family: 'Source Sans Pro', sans-serif;;
+  font-size: 80px;
+}
+
+
+/* @media only screen and (max-width: 600px)  {
+  .effect2 {
+    width:75%;
+    height: 250px;
+  }
+} */
