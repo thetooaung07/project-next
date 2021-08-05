@@ -3,6 +3,7 @@ import Image from "next/image";
 import BgImage from "../../public/images/intro-card/bg_blended.png";
 import Card from "../../public/images/intro-card/card_crop.png";
 import Link from "next/link";
+import { ChevronRight } from "../icons/Icons";
 
 export default function IntroCard() {
   return (
@@ -24,27 +25,37 @@ export default function IntroCard() {
                   <Link href="/">Contact</Link>
                 </li>
                 <li>
-                  <Link href="/">Support</Link>
+                  <Link href="/">About Me</Link>
                 </li>
                 <li>
-                  <Link href="/">About Me</Link>
+                  <Link href="/">Support</Link>
                 </li>
               </ul>
             </nav>
             <div className={cls.middle}>
-              <div>Project</div>
+              <div>
+                <h2>Project</h2>
+              </div>
 
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis fugit odio nam aliquam harum velit beatae aspernatur
                 dolores repellat corrupti.
               </p>
+
+              <div className={cls.btnGroup}>
+                <button className={cls.btnExplore}>
+                  Explore&thinsp;<ChevronRight></ChevronRight>
+                </button>
+                <button>
+                  More&thinsp;<ChevronRight></ChevronRight>
+                </button>
+              </div>
             </div>
 
             {/* Filler div for justify-content space-between */}
+
             <div></div>
-            <div></div>
-           
           </div>
         </div>
       </div>

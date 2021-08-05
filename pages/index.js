@@ -6,6 +6,9 @@ import styles from "../styles/Home.module.css";
 export default function HomePage() {
   return (
     <div>
+      <Head>
+        <script async src="https://unpkg.com/feather-icons"></script>
+      </Head>
       <IntroCard></IntroCard>
     </div>
   );
