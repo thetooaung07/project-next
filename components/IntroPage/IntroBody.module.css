@@ -12,7 +12,7 @@
 
 .btnGroup {
   margin-top: 30px;
-  width: 75%;
+  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 5px;
@@ -23,11 +23,12 @@
   background-color: transparent;
   border: none;
   color: white;
-  padding: 7px 30px;
+  padding: 9px 30px;
   margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 2px;
 }
 
 .btnGroup .btnExplore {
@@ -50,4 +51,189 @@
     0 0 76px rgba(255, 255, 255, 0.6), 0 0 77px rgba(255, 255, 255, 0.5),
     0 0 78px rgba(255, 255, 255, 0.4), 0 0 79px rgba(255, 255, 255, 0.3),
     0 0 80px rgba(255, 255, 255, 0.2), 0 0 85px rgba(255, 255, 255, 0.1);
+}
+
+.btnExplore {
+  min-width: 160px;
+}
+
+.btnExplore span {
+  letter-spacing: 3px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnExplore:hover span:nth-of-type(1) {
+  animation: E 0.5s;
+}
+
+.btnExplore:hover span:nth-of-type(2) {
+  animation: x 0.5s;
+}
+
+.btnExplore:hover span:nth-of-type(3) {
+  animation: p 0.5s;
+}
+
+.btnExplore:hover span:nth-of-type(4) {
+  animation: l 0.5s;
+}
+
+.btnExplore:hover span:nth-of-type(5) {
+  animation: o 0.5s;
+}
+
+.btnExplore:hover span:nth-of-type(6) {
+  animation: r 0.5s;
+}
+
+.btnExplore:hover span:nth-of-type(7) {
+  animation: e 0.5s;
+}
+
+.chevronRight svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.btnExplore:hover .chevronRight {
+  animation: chevronR 0.5s;
+}
+
+@keyframes chevronR {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 0) scaleX(-1.2);
+  }
+  80% {
+    transform: translate(7px, 0) scaleX(-0.2);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes E {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  75% {
+    transform: translate(5px, 0);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes x {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-4px, 0);
+  }
+  50% {
+    transform: translate(3px, 4px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes p {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: scale(2);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes l {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-10px, -2px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes o {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 7px);
+  }
+  80% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes r {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, -10px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(0, -10px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes e {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }

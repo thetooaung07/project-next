@@ -14,7 +14,8 @@ export default function IntroCard() {
         <div className={cls.image}>
           <Image src={BgImage} alt="Background" layout="fill"></Image>
         </div>
-        <div className={[cls.effect2]}>
+
+        <div className={cls.effect2}>
           <Image alt="Mountains" src={Card} layout="fill" priority></Image>
 
           <div className={`${cls.container} ${cls.cardOverlay}`}>
