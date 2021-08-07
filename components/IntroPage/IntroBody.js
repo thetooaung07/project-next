@@ -4,7 +4,7 @@ import { ChevronRight } from "../icons/Icons";
 
 export default function IntroBody() {
    return (
-      <div className={cls.middle}>
+      <div className={cls.introBody}>
       <div>
         <h2>Project</h2>
       </div>
@@ -19,7 +19,7 @@ export default function IntroBody() {
         <button className={cls.btnExplore}>
           Explore&thinsp;<ChevronRight></ChevronRight>
         </button>
-        <button>
+        <button className={cls.btnMore}>
           More&thinsp;<ChevronRight></ChevronRight>
         </button>
       </div>

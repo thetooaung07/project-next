@@ -1,10 +1,10 @@
-.middle > div > h2 {
+.introBody > div > h2 {
   text-align: left;
   margin: 0;
   padding: 0;
   font-size: 80px;
 }
-.middle p {
+.introBody p {
   font-size: 13px;
   padding-left: 7px;
   opacity: 0.9;
@@ -33,4 +33,21 @@
 .btnGroup .btnExplore {
   background-color: #cc392f;
   border-radius: 15px;
+}
+
+.btnMore {
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btnMore:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+    0 0 50px rgba(255, 255, 255, 0.8), 0 0 75px rgba(255, 255, 255, 0.7),
+    0 0 76px rgba(255, 255, 255, 0.6), 0 0 77px rgba(255, 255, 255, 0.5),
+    0 0 78px rgba(255, 255, 255, 0.4), 0 0 79px rgba(255, 255, 255, 0.3),
+    0 0 80px rgba(255, 255, 255, 0.2), 0 0 85px rgba(255, 255, 255, 0.1);
 }
