@@ -1,0 +1,38 @@
+.listElements {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.listElements ul {
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.listElements ul li {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  opacity: .7;
+  transition: opacity .3s cubic-bezier(.51, .92, .24, 1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.listElements ul li:hover {
+  opacity: 1;
+}
+
+
+/* a {
+  position: relative;
+
+
+
+ 
+} */
