@@ -10,13 +10,13 @@ export default function IntroNavigation() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <Link href="/">About Me</Link>
+          <Link href="/support">Support</Link>
         </li>
         <li>
-          <Link href="/">Support</Link>
+          <Link href="/aboutme">About Me</Link>
         </li>
       </ul>
     </nav>
