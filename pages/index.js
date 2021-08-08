@@ -3,7 +3,7 @@ import Image from "next/image";
 import IntroCard from "../components/IntroPage/IntroCard";
 import styles from "../styles/Home.module.css";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <div>
       <Head>

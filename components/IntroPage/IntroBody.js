@@ -7,6 +7,11 @@ export default function IntroBody() {
 
   const router = useRouter();
 
+
+  function handleClick() {
+    router.push("/homepage")
+  }
+
   return (
     <div className={cls.introBody}>
       <div>
@@ -20,7 +25,7 @@ export default function IntroBody() {
       </p>
 
       <div className={cls.btnGroup}>
-        <button className={cls.btnExplore}>
+        <button className={cls.btnExplore} onClick={handleClick}>
           <span>E</span>
           <span>x</span>
           <span>p</span>
@@ -32,7 +37,7 @@ export default function IntroBody() {
             <ChevronRight ></ChevronRight>
           </span>
         </button>
-        <button className={cls.btnMore}>
+        <button className={cls.btnMore} onClick={handleClick}>
           More&thinsp;<ExternalLink></ExternalLink>
         </button>
       </div>
