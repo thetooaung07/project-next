@@ -1,8 +1,12 @@
 import React from "react";
 import cls from "./IntroBody.module.css";
-import { ArrowRightCircle, ChevronRight } from "../icons/Icons";
+import { ExternalLink, ChevronRight } from "../icons/Icons";
+import { useRouter } from "next/dist/client/router";
 
 export default function IntroBody() {
+
+  const router = useRouter();
+
   return (
     <div className={cls.introBody}>
       <div>
@@ -29,7 +33,7 @@ export default function IntroBody() {
           </span>
         </button>
         <button className={cls.btnMore}>
-          More&thinsp;<ArrowRightCircle></ArrowRightCircle>
+          More&thinsp;<ExternalLink></ExternalLink>
         </button>
       </div>
     </div>

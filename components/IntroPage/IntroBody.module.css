@@ -39,12 +39,14 @@
 .btnMore {
   color: white;
   opacity: 0.7;
-  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: all 0.3s ease-out;
   font-weight: 500;
   text-decoration: none;
 }
-
+/* cubic-bezier(0.51, 0.92, 0.24, 1) */
 .btnMore:hover {
+  /* font-size: 17px; */
+  transform: scale(1.2);
   opacity: 1;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1),
     0 0 50px rgba(255, 255, 255, 0.8), 0 0 75px rgba(255, 255, 255, 0.7),
@@ -107,11 +109,14 @@
   0% {
     transform: translate(0, 0);
   }
+  30% {
+    transform: translate(10px, 0) scaleX(-0.5);
+  }
   50% {
-    transform: translate(10px, 0) scaleX(-1.2);
+    transform: translate(12px, 0) scaleX(-1.2);
   }
   80% {
-    transform: translate(7px, 0) scaleX(-0.2);
+    transform: translate(5px, 0) scaleX(-1.2);
   }
   100% {
     transform: translate(0, 0);
